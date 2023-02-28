@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>签到</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <meta name="wechat-enable-text-zoom-em" content="true">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon"/>
+    <link rel="bookmark" href="./images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="./plugin/weui/style/weui.css"/>
+    <link rel="stylesheet" href="./plugin/weui/style/weuix.css"/>
+<!--    <link rel="stylesheet" href="./plugin/weui/example/example.css"/>-->
+
+
+</head>
+<body>
+
+<div class="page">
+    <div class="weui-msg" id="info_div" style="display: none">
+        <div class="weui-msg__icon-area" id="icon_img_div"><i class="weui-icon-warn weui-icon_msg"></i></div>
+        <div class="weui-msg__text-area">
+            <h2 class="weui-msg__title" id="tip_h2">签到失败</h2>
+            <p class="weui-msg__desc" id="tip_detail_p">请确认是否预约、场馆、预约时间（预约时间段内有效）</p>
+            <div class="weui-msg__custom-area">
+                <ul class="weui-form-preview__list" id="apply_list_ul">
+                </ul>
+            </div>
+        </div>
+        <!--
+        <div class="weui-msg__opr-area">
+            <p class="weui-btn-area">
+                <a href="javascript:history.back();" role="button" class="weui-btn weui-btn_primary">推荐操作</a>
+            </p>
+        </div>
+        -->
+    </div>
+</div>
+
+
+
+
+
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./plugin/weui/example/zepto.min.js"></script>
+<script src="./plugin/weui/example/zepto.weui.js"></script>
+<script type="text/javascript" src="./js/jweixin-1.0.0.js"></script>
+<script src="./js/weui.min.js"></script>
+<!--<script src="./plugin/weui/example/example.js"></script>-->
+<!--<script src="./plugin/weui/example/wah.js"></script>-->
+<script src="./js/sign.js"></script>
+<!--<script src="./js/common.js"></script>-->
+
+
+</body>
+
+<script type="application/javascript">
+
+    $(function(){
+        sign.init();
+    });
+
+</script>
+
+
+
+</html>
